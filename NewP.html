@@ -96,13 +96,10 @@ body.show-notifications #divNotificationArea{
 
   
       <script id="rendered-js" >
-///Disclaimer: this is only a demonstration of a possible teknique, this code is written for brevity to convey a principle not as an example of best practice
 
-
-//a place to store all notifications
 let notifications = [];
 try {
-  // try to get a list of notifications from localStorage
+
   notifications = JSON.parse(localStorage.myNotifications || `[]`);
 }
 catch (e) {
